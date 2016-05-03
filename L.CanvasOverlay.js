@@ -2,14 +2,14 @@
   Generic Canvas Overlay for leaflet.
 
   ** Requires **
-  - Leaflet 0.7.3 or later
+  - Leaflet 1.0.0rc1 or later
 
   ** Copyright **
   (C) 2014 Stanislav Sumbera
   - http://blog.sumbera.com/2014/04/20/leaflet-canvas/
 
   ** Maintained by **
-  (C) 2015 Alexander Schoedon <schoedon@uni-potsdam.de>
+  (C) 2015-16 Alexander Schoedon <schoedon@uni-potsdam.de>
 
   All rights reserved.
 
@@ -26,7 +26,7 @@
 /**
  * Leaflet canvas overlay class
  */
-L.CanvasOverlay = L.Class.extend({
+L.CanvasOverlay = L.Layer.extend({
 
   initialize: function(userDrawFunc, options) {
     this._userDrawFunc = userDrawFunc;
